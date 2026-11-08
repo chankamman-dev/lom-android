@@ -240,3 +240,8 @@ il2cpp 命令见 `E:\android-recompile-work\lom-android-work\il2cpp`：`--conver
 - 构建：tools/build-bridge.ps1 出正式桥接（SHA256 6110E853…686B，合约 231 项、ServerTests 含新 5 项通过），再 `NO_OBB=1 bash tools/lomweave/build-mod.sh`（这次 72 分钟，大头是 E 盘被占满时复制资源包）。上一版包留在 mod/apk/lom-android-20261107.apk。
 - **20:20 已装 Thor**（用户同意，说边玩边测）：装前备份 E:\android-recompile-work\lom-android-work\thor-backup-20261108\Save.tar，40 个存档哈希装前装后一致；装时游戏没在运行。没在模拟器上验证（用户要求直接装）。
 - 待实测：攻略页从下屏打开、换屏、Steam 指南首次下载（Clash）、桥接素材目录在 IL2CPP 下能否出立绘（AiPortrait）和书名（Plugin.Localized(item.GetNameKey())）、图鉴达成情况。本地预览：G:\ai liabary\.claude\launch.json 的 lom-guide-preview（lom-thor-probe/tools/guide-preview.cjs，素材由 tools/guide-preview-art.py、guide-preview-data.py 从电脑上的游戏导出到 E:\...\guide-preview\art）。
+
+### 11-08 仓库公开
+- 原私有仓库改名为 chankamman-dev/lom-android-private（完整历史）；新建公开仓库 chankamman-dev/lom-android，只有一个干净提交，作者用 GitHub 匿名邮箱。本地 remote：`origin` = 私有仓库，`public` = 公开仓库。
+- 公开前去掉了 Steam 账号 ID、个人资料链接、设备序列号和带 Windows 用户名的路径。脚本改读环境变量：`ANDROID_SERIAL`（rebuild.sh、run-thor.sh）、`ANDROID_SDK_ROOT`（build-apk.sh、cloud/build.gradle.kts，没设时回退到本机默认位置）。
+- 以后往 `public` 推：先确认不含上面这些信息，提交作者用匿名邮箱。

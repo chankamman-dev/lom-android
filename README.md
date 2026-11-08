@@ -1,5 +1,7 @@
 <p align="center"><img src="docs/banner.jpg" alt="活侠传" width="100%"></p>
 
+<p align="center"><b>中文</b> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a></p>
+
 <h1 align="center">活侠传 · 安卓原生版</h1>
 
 <p align="center">
@@ -169,7 +171,7 @@ bash tools/rebuild.sh
 NO_OBB=1 bash tools/lomweave/build-mod.sh
 ```
 
-产物是一个约 400 MB 的 APK。装到设备上以后，第一次打开会引导你登录 Steam 下载数据。具体参数、路径和每个脚本做什么见 [HANDOFF.md](HANDOFF.md)。
+产物是一个约 400 MB 的 APK。装到设备上以后，第一次打开会引导你登录 Steam 下载数据。设备序列号用环境变量 `ANDROID_SERIAL` 指定，SDK 位置用 `ANDROID_SDK_ROOT`。具体参数、路径和每个脚本做什么见 [HANDOFF.md](HANDOFF.md)。
 
 ## 现状
 
