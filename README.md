@@ -43,7 +43,6 @@
 <p align="center"><img src="docs/thor-guide.webp" alt="攻略换到上屏" width="50%"><br>
 <sub>攻略可以整页换到上屏，盖在游戏上看；下屏留着总览</sub></p>
 
-> 外壳图用自制截图工具 Thor Capture 的外壳绘制代码合成，屏幕里是真实截图（攻略页那几张是电脑上的预览截图）。
 
 ## 能做什么
 
